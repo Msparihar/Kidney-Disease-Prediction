@@ -1,5 +1,10 @@
 # Kidney-Disease-Prediction
 
+## Preview
+
+![image](https://github.com/Msparihar/Kidney-Disease-Prediction/assets/75237981/e364f0c2-f3b7-4423-9288-ea43e73ac838)
+
+
 ## Workflows
 
 1. Update config.yaml
