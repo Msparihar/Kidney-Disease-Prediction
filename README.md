@@ -1,4 +1,8 @@
-# Kidney-Disease-Prediction
+# Kidney Disease Prediction
+
+## Description
+
+This web application utilizes deep learning techniques to predict the likelihood of developing kidney disease. Built using Python, TensorFlow, Flask, MLflow, and DVC, the application provides a user-friendly interface for inputting patient data and receiving risk assessment results. An automated workflow seamlessly handles deployment and containerization, ensuring the application's accessibility and scalability.
 
 ## Preview
 
