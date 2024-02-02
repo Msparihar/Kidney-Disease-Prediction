@@ -10,7 +10,7 @@ This web application utilizes deep learning techniques to predict the likelihood
 
 The Fire Detection project offers the following features:
 
-1. **Fire Detection:**
+1. **Kidney Disease Prediction:**
 
 2. **User-friendly Interface:**
 
