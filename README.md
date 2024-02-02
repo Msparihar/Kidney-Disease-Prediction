@@ -1,149 +1,78 @@
 # Kidney Disease Prediction
 
-## Description
+This project explores the practical use of the application of Deep Learning in medical image diagnosis.
+
+## Overview
 
 This web application utilizes deep learning techniques to predict the likelihood of developing kidney disease. Built using Python, TensorFlow, Flask, MLflow, and DVC, the application provides a user-friendly interface for inputting patient data and receiving risk assessment results. An automated workflow seamlessly handles deployment and containerization, ensuring the application's accessibility and scalability.
 
-## Preview
+## Features
+
+The Fire Detection project offers the following features:
+
+1. **Fire Detection:**
+
+2. **User-friendly Interface:**
+
+## Demo
 
 ![image](https://github.com/Msparihar/Kidney-Disease-Prediction/assets/75237981/e364f0c2-f3b7-4423-9288-ea43e73ac838)
 
+## Installation
 
-## Workflows
+To run this Fire Detection project locally, follow these steps:
 
-1. Update config.yaml
-2. Update secrets.yaml [Optional]
-3. Update params.yaml
-4. Update the entity
-5. Update the configuration manager in src config
-6. Update the components
-7. Update the pipeline
-8. Update the main.py
-9. Update the dvc.yaml
-10. app.py
+1. Clone the Repository:
+    ```bash
+      https://github.com/Msparihar/Kidney-Disease-Prediction.git
+    ```
 
-# How to run?
+2. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-### STEPS:
+3. Run the App:
+   ```bash
+   python main.py
+   ```
 
-Clone the repository
+## Contribution
 
-```bash
-https://github.com/Msparihar/Kidney-Disease-Prediction.git
-```
+Contributions to the Fire Detection project are welcome! If you'd like to contribute, please follow these steps:
 
-### STEP 01- Create a conda environment after opening the repository
+1. Fork the repository on GitHub.
 
-```bash
-conda create -n cnncls python=3.8 -y
-```
+2. Create a new branch from the `main` branch.
 
-```bash
-conda activate cnncls
-```
+3. Make your modifications and enhancements.
 
-### STEP 02- install the requirements
+4. Test your changes thoroughly.
 
-```bash
-pip install -r requirements.txt
-```
+5. Commit and push your changes to your forked repository.
 
-```bash
-# Finally run the following command
-python app.py
-```
+6. Submit a pull request to the main repository, describing your changes in detail.
 
-Now,
+Please ensure your contributions adhere to the project's coding standards and guidelines.
 
-```bash
-open up you local host and port
-```
+## Acknowledgments
 
-## MLflow
+The Fire Detection project is built upon various open-source libraries and resources. I would like to express my gratitude to the developers and contributors of the following projects:
 
-- [Documentation](https://mlflow.org/docs/latest/index.html)
+- [Ultralytics](https://github.com/ultralytics/ultralytics)
+- [Python](https://www.python.org/)
+- [Flask](https://flask.palletsprojects.com/)
+- [Roboflow](https://roboflow.com/)
+- [MLFlow](https://mlflow.org/docs/latest/index.html)
 
-## About MLflow & DVC
+## License
 
-MLflow
+This project is licensed under the [MIT License](LICENSE). Feel free to modify and distribute it according to the terms of the license.
 
-- Its Production Grade
-- Trace all of your expriements
-- Logging & taging your model
+## Contact
 
-DVC
+If you have any questions, suggestions, or feedback regarding this project, please contact the project maintainer at manishsparihar2020@gmail.com
 
-- Its very lite weight for POC only
-- lite weight expriements tracker
-- It can perform Orchestration (Creating Pipelines)
+<hr>
 
-# AWS-CICD-Deployment-with-Github-Actions
-
-## 1. Login to AWS console.
-
-## 2. Create IAM user for deployment
-
-    #with specific access
-
-    1. EC2 access : It is virtual machine
-
-    2. ECR: Elastic Container registry to save your docker image in aws
-
-
-    #Description: About the deployment
-
-    1. Build docker image of the source code
-
-    2. Push your docker image to ECR
-
-    3. Launch Your EC2
-
-    4. Pull Your image from ECR in EC2
-
-    5. Lauch your docker image in EC2
-
-    #Policy:
-
-    1. AmazonEC2ContainerRegistryFullAccess
-
-    2. AmazonEC2FullAccess
-
-## 3. Create ECR repo to store/save docker image
-
-    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/chicken
-
-## 4. Create EC2 machine (Ubuntu)
-
-## 5. Open EC2 and Install docker in EC2 Machine:
-
-    #optinal
-
-    sudo apt-get update -y
-
-    sudo apt-get upgrade
-
-    #required
-
-    curl -fsSL https://get.docker.com -o get-docker.sh
-
-    sudo sh get-docker.sh
-
-    sudo usermod -aG docker ubuntu
-
-    newgrp docker
-
-# 6. Configure EC2 as self-hosted runner:
-
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
-
-# 7. Setup github secrets:
-
-    AWS_ACCESS_KEY_ID=
-
-    AWS_SECRET_ACCESS_KEY=
-
-    AWS_REGION = us-east-1
-
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
-
-    ECR_REPOSITORY_NAME = simple-app
+I really appreciate your interest in this project and hope you found this project helpful! Keep Exploring!
